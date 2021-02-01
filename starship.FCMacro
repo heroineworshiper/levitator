@@ -1,0 +1,36 @@
+# create sections for starship
+
+import libsketch
+import importlib
+importlib.reload(libsketch)
+import math
+
+BORDER_W = .8
+
+if False:
+    border = libsketch.makeBorder('fuse', 
+        1.2, 
+        libsketch.toRad(90),
+        False)
+    border.Placement = App.Placement(
+        App.Vector(0.0, 0.0, 0.0),
+        App.Rotation(App.Vector(1, 0, 0), 90.0))
+
+if True:
+    border = libsketch.makeBorder('bulkhead', 
+        BORDER_W, 
+        -libsketch.toRad(90),
+        False)
+    border.Placement = App.Placement(
+        App.Vector(0.0, 0.0, 0.0),
+        App.Rotation(App.Vector(1, 0, 0), 90.0))
+
+if False:
+    border = libsketch.makeBorder('raptor1', 
+        BORDER_W, 
+        -libsketch.toRad(90),
+        False)
+    border.Placement = App.Placement(
+        App.Vector(0.0, 0.0, 0.0),
+        App.Rotation(App.Vector(1, 0, 0), 90.0))
+

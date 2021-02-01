@@ -1,0 +1,25 @@
+Levitated starship
+
+
+levitator.X: the PIC18F1320 source code for MPLab
+
+starship.FCStd: FreeCAD model of the ship
+
+starship.FCMacro: generates objects for the model
+
+libsketch.py: library used by starship.FCMacro
+
+schematic.png: the rough circuit
+
+
+The levitator is just a PIC18F1320 connected to a BJT for driving the
+electromagnet, a transistor of some kind for driving a cooling fan, & 2
+hall effect sensors for sensing height.  It runs on 19V.  It uses a BJT
+instead of a MOSFET for driving the magnet because BJTs were more
+resistant to back EMF.
+
+Hall effect sensors with the lowest mV/G or lowest sensitivity are best.
+
+MAGNET_DELAY0 has to be adjusted depending on the weight of the model
+TARGET_ADC determines the height
+
